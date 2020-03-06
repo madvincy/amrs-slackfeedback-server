@@ -1,9 +1,8 @@
-FROM keymetrics/pm2-docker-alpine:7
+FROM node:8-alpine
 
-COPY . /opt/amrs-slackfeedback-server
 
-RUN npm install -g babel-cli
+COPY . /opt/eici-slackfeedback-server
 
-RUN cd /opt/amrs-slackfeedback-server && npm install
+RUN cd /opt/eici-slackfeedback-server && npm install
 
-CMD ["pm2-docker", "start", "/opt/amrs-slackfeedback-server/config/pm2_config.json" ]
+CMD ["node", "/opt/eici-slackfeedback-server/app.js" ]

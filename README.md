@@ -2,7 +2,7 @@
 Amrs slack srever is a node project using hapi and consumed by etl rest server. It is used to interract with slack channels to post and retrieve messages.
 To setup the project run
 
-$ git clone https://github.com/AMPATH/amrs-slackfeedback-server.git
+$ git clone https://github.com/madvincy/amrs-slackfeedback-server.git
 
 $ cd amrs-slackfeedback-server
 
